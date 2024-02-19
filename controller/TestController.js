@@ -17,7 +17,7 @@ function unixTimes(req,res){
 
     // check if date is invalide
     if(isNaN(date.getTime())){
-        return res.json({error: "Invalid date"});
+        return res.json({error: "Invalid Date"});
     } 
     return res.json({
         unix: date.getTime(),
